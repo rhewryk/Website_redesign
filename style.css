@@ -1,0 +1,457 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: black;
+}
+
+
+
+body {
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 1.4;
+
+}
+
+.nav_bar {
+	position: 	fixed;
+	top: 0px;
+	left: 0px;
+	width: 3000px;
+	height: 105px;
+	background-color: #d2190b;
+
+}
+
+	#top-logo {
+		display: flex;
+		align-items: center;
+		padding: 10.5px;
+		text-decoration: none;
+	}
+
+
+
+			.TTC:hover {
+				cursor: pointer;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			.to_transit_c {
+				color: white;
+				font-family: futura, sans-serif;
+				font-weight: 300;
+				font-style: normal;
+				font-size: 11pt;
+				letter-spacing: 1.5pt;
+			}
+
+				.service_d {
+					position: absolute;
+					color: #d2190b;
+					top: 200px;
+					left: 150px;
+					font-family: futura, sans-serif;
+					font-weight: 700;
+					font-style: normal;
+					font-size: 28pt;
+					letter-spacing: 5pt;
+					max-width: 200px;
+				}
+
+				#transit_delays {
+					position: absolute;
+					top: 275px;
+					left: 150px;
+					font-family: monospace;
+					font-weight: 300;
+					font-style: normal;
+					font-size: 12pt;
+					max-width: 320px;
+					line-height: 20px;
+				}
+
+.nav_button {
+	position: absolute;
+	width: 175px;
+	height: 105px;
+	top: 0px;
+	background-color: #d2190b;
+	color: white;
+	font-family: monospace;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 12pt;
+	text-align: center;
+	line-height: 105px;/* THIS IS A LIFE SAVER!!!! :)*/
+}
+
+			.nav_button:hover {
+				background-color: white;
+				color: #d2190b;
+				cursor: pointer;
+				font-weight: 800;
+			}
+
+			.nav_button_current {
+				background-color: white;
+				color: #d2190b;
+				position: absolute;
+				width: 175px;
+				height: 105px;
+				top: 0px;
+				font-weight: 800;
+				font-family: monospace;
+				text-align: center;
+				line-height: 105px;
+				font-size: 13pt;
+			}
+
+			#tp {
+				left: 935px;
+				width: 140px;
+				font-weight: 800;
+			}
+
+			#m_s {
+				left: 1075px;
+				width: 187px;
+			}
+
+			#f_p {
+				left: 1260px;
+				width: 170px;
+			}
+
+			#u {
+				left: 1420px;
+				width: 105px;
+			}
+
+			#i {
+				left: 1520px;
+				width: 80px;
+			}
+
+				#link_one {
+					position: absolute;
+					left: 935px;
+					width: 140px;
+					font-weight: 800; /*Need to figure out a way to make this more noticable but not crazy out of place*/
+				}
+
+				#link_two {
+					position: absolute;
+					left: 1075px;
+					width: 185px;
+				}
+
+				#link_three {
+					position: absolute;
+					left: 1260px;
+					width: 160px;
+				}
+
+				#link_four {
+					position: absolute;
+					left: 1420px;
+					width: 100px;
+				}
+
+				#link_five {
+					position: absolute;
+					left: 1520px;
+					width: 50px;
+				}
+
+/*TRIP PLANNER:*/
+
+		.t_p_heading {
+			position: absolute;
+			color: black;
+			top: 200px;
+			left: 150px;
+			font-family: futura, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 28pt;
+			letter-spacing: 5pt;
+		}
+
+		input {
+			position: absolute;
+			background-color: #e9e9ed;
+			/*padding:  12px 12px;
+			margin: 8px 0;*/
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+
+		#from {
+			top: 200px;
+			left: 250px;
+			height: 45px;
+			width: 200px;
+		}
+
+		#to {
+			top: 280px;
+			left: 250px;
+			height: 45px;
+			width: 200px;
+		}
+
+		#form_1 {
+			position: absolute;
+			/*background-color: #e4e4e4;*/
+			box-sizing: border-box;
+			border-radius: 4px;
+			left: 765px;
+			top: 205px;
+			height: 40px;
+			width: 100%;
+			transform: scale(1.3);
+		}
+
+		#form_2 {
+			position: absolute;
+			box-sizing: border-box;
+			border-radius: 4px;
+			left: 920px;
+			top: 205px;
+			height: 45px;
+			width: 100%;
+			transform: scale(1.3);
+		}
+
+		#form_3 {
+			position: absolute;
+			box-sizing: border-box;
+			border-radius: 4px;
+			left: 1005px;
+			top: 205px;
+			height: 45px;
+			width: 100%;
+			transform: scale(1.3);
+		}
+
+		.symbol {
+			font-family: monospace;
+			position: absolute;
+			top: 205px;
+			left: 725px;
+			font-size: 15pt;
+		}
+
+		input,
+		select {
+
+			border:1px solid #000;
+			background: white;
+			padding: 0.5em;
+			border-radius: 5px;
+			border-width: 1px;
+			font-family: monospace;
+			font-size: 10pt;
+			color: black;
+		}
+
+/*UPDATES:*/
+
+		.update_text {
+			position: absolute;
+			max-width: 350px;
+		}
+
+			#text_1 {
+				font-family: monospace;
+				left: 150px;
+				top: 175px;
+				line-height: 22px;
+				font-size: 11pt;
+			}
+
+			#text_2 {
+				font-family: monospace;
+				left: 550px;
+				top: 175px;
+				line-height: 22px;
+				font-size: 11pt;
+			}
+
+		#heading {
+			font-family: futura, sans-serif;
+			font-weight: 700;
+			line-height: 40px;
+			font-size: 24pt;
+			letter-spacing: 2px;
+		}
+
+		#heading_2 {
+			font-size: 14pt;
+			line-height: 24px;
+		}
+
+#maps_ {
+	text-decoration: none;
+	color: black;
+}
+
+
+		/*.rectangle_fill_in {
+			position: absolute;
+			font-family: niveau-grotesque, sans-serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 15pt;
+			letter-spacing: 1pt;
+			background-color: #e4e4e4;
+			line-height: 45px;
+			padding-left: 10px;
+			width: 120px;
+			height: 45px;
+		}
+
+			#from_ {
+				left: 75px;
+				top: 300px;
+			}
+
+			#to_ {
+				left: 75px;
+				top: 375px;
+			}
+.bottom_bar {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 3000px;
+	height: 105px;
+	background-color: #000;
+}*/
+
+
+
+footer {
+	position: relative;
+	width: 100%;
+	background: lightgrey;
+	min-height: 80px;
+	bottom: 0;
+	display: flex;
+	justify-content: right;
+	padding: 10px;
+}
+
+	.bottom_text {
+		color: grey;
+		font-family: futura, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 12px;
+		letter-spacing: 1.5px;
+		text-decoration: none;
+		align-items: center;
+		text-align: right;
+	}
+
+
+
+
+
+
+nav {
+	position: fixed;
+	width: 100%;
+	background: red;
+	min-height: 105px;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+}
+
+
+.TTC {
+			color: white;
+			font-family: futura, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 50pt;
+			letter-spacing: 2px;
+			text-decoration: none;
+		}
+		a:link {
+		 text-decoration: none; }
+
+
+
+.nav_links {
+	list-style-type: none;
+	display: flex;
+}
+
+
+
+	.nav_link a:link,
+	.nav_link a:visited {
+		
+		padding: 21px;
+		color: white;
+		text-decoration: none;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.nav_link.active a,
+	.nav_link a:hover {
+		background: white;
+		color: red;
+		text-decoration: none;
+	}
+
+		#head_image {
+			position: relative;
+			max-width: 1300px;
+			align-items: center;
+		}
+
+
+
+
+h1, h2, h3, h4, h5 {
+	font-family: futura, sans-serif;
+	font-weight: 700;
+}
+
+	h2 {
+			
+			font-size: 2em;
+		}
+
+
+
+
+	#container {
+		max-width: 1300px;
+		margin: 115px auto;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 21px;
+		/*padding-top: 10px;*/
+
+/*		temoprary for development*/
+
+		/*border-left: 1px solid black;
+		border-right: 1px solid black;
+		min-height: 200px;*/
+	}
+
+		.cols-2 { grid-column:span 2; }
+		.cols-3 { grid-column:span 3; }
+		.cols-4 { grid-column:span 4; }
+		.cols-6 { grid-column:span 6; }
+		.cols-12 { grid-column:span 12; }
